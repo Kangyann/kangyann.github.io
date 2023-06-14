@@ -35,22 +35,21 @@
                 <i class="fa-brands fa-discord fa-xl"></i>
             </div>
             <div class="bars mx-4">
-                <i class="fa-solid fa-bars" data-bs-toggle="offcanvas" href="#menu" role="button"
-                    aria-controls="offcanvasExample"> </i>
+                <i class="fa-solid fa-bars" data-bs-toggle="offcanvas" href="#menu" style="cursor: pointer;"> </i>
             </div>
+            <div class="offcanvas offcanvas-top" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="menu"
+                aria-labelledby="offcanvasScrollingLabel">
+                <div class="offcanvas-header">
+                    <h2 class="offcanvas-title" id="offcanvasScrollingLabel">Menu</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="d-flex justify-content-center align-items-center flex-column gap-2">
+                        <a href="#home" style="font-size: 14px;">Beranda</a>
+                        <a class="mx-5" href="#project" style="font-size: 14px;">Project</a>
+                        <a href="#about" style="font-size: 14px;">About Me</a>
+                    </div>
 
-        </div>
-        <div class="offcanvas offcanvas-top" id="menu" aria-labelledby="offcanvasExampleLabel">
-            <div class="offcanvas-header">
-                <h2 class="offcanvas-title">Menu</h2>
-                <button type="button" class="btn-close btn-primary" data-bs-dismiss="offcanvas"
-                    aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <div class="d-flex flex-column align-items-center gap-2">
-                    <a href="#home">Beranda</a>
-                    <a href="#project">Project</a>
-                    <a href="#about">About Me</a>
                 </div>
             </div>
         </div>
