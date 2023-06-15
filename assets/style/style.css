@@ -132,9 +132,7 @@
   border-top-right-radius: 12px;
   background-color: var(--);
 }
-.about-profile {
-  width: 400px;
-}
+
 .about-profile .images {
   width: 100px;
   height: 100px;
@@ -146,13 +144,10 @@
   width: 100%;
   height: 100%;
 }
-.about-profile .text {
-  width: 80%;
-}
+
 .about-profile input[type="range"] {
   -webkit-appearance: none;
   height: 6px;
-  width: 100%;
   background: var(--black-opacity);
   border-radius: 5px;
   background-repeat: no-repeat;
@@ -160,9 +155,6 @@
 }
 .about-profile input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
-}
-.skill {
-  width: 80%;
 }
 .cv a {
   padding: 6px 16px;
