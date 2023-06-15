@@ -27,7 +27,7 @@
 .content {
   background-color: var(--primary);
 }
-.navbar,
+.nav,
 #menu {
   background-color: var(--black-opacity);
 }
