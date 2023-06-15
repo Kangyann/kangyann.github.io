@@ -18,25 +18,25 @@
 </head>
 
 <body>
-    <div id="home" class="w-100">
+    <div class="content">
+        <!--  -->
         <div class="navbar sticky-top">
-            <div class="mx-3 d-flex align-items-center home" data-aos="fade-down">
-                <i class="fa-solid fa-house fa-xl mx-2"></i>
-                <a href="index.html">KANGYANN</a>
+            <div class="home d-flex align-items-baseline">
+                <i class="fa-solid fa-house fa-xl"></i>
+                <a href="#">KANGYANN</a>
             </div>
-            <div class="linked" data-aos="fade-down" data-aos-delay="100">
-                <a href="#home" style="font-size: 14px;">Beranda</a>
-                <a class="mx-5" href="#project" style="font-size: 14px;">Project</a>
-                <a href="#about" style="font-size: 14px;">About Me</a>
+            <div class="linked">
+                <a href="#page">Page</a>
+                <a href="#project">Project</a>
+                <a href="#about">About</a>
             </div>
-            <div class="mx-4" data-aos="fade-down" data-aos-delay="100">
+            <div class="icon">
                 <i class="fa-brands fa-github fa-xl"></i>
                 <i class="fa-brands fa-instagram fa-xl mx-2"></i>
                 <i class="fa-brands fa-discord fa-xl"></i>
             </div>
-            <!-- <div class="bars mx-4">
+            <div class="menu mx-4">
                 <i class="fa-solid fa-bars" data-bs-toggle="offcanvas" href="#menu" style="cursor: pointer;"> </i>
-                
                 <div class="offcanvas offcanvas-end w-50 p-4" data-bs-scroll="true" tabindex="-1" id="menu"
                     aria-labelledby="offcanvasScrollingLabel">
                     <div class="" style="border-bottom: 2px solid var(--primary);">
@@ -48,98 +48,133 @@
                         <a href="#about" style="font-size: 14px;">About Me</a>
                     </div>
                 </div>
-                
-            </div> -->
+            </div>
         </div>
-        <div class="vh-100 d-flex justify-content-center flex-column align-items-center">
-            <div class="w-50 text-center items" data-aos="fade-down">
+        <!--  -->
+        <div class="page text-center d-flex justify-content-center align-items-center flex-column min-vh-100" id="page">
+            <div class="page-item">
                 <span id="writer"></span><br>
-                <p data-aos="fade-down" data-aos-delay="150">Hello everyone, welcome to my website, my name is Dian,
+                <span>Hello everyone, welcome to my website, my name is Dian,
                     <br>I hope you all like it.
-                </p>
-                <a href="https://wa.me/6283829055059/" data-aos="fade-down" data-aos-delay="200">Contact</a>
-                <a href="" data-aos="fade-down" data-aos-delay="200">Blog</a>
-            </div>
-        </div>
-        <div class="d-flex flex-column justify-content-center align-items-center mt-5 p-5" id="project"
-            data-aos="fade-down" data-aos-delay="100">
-            <h2 data-aos="fade-down" data-aos-delay="800">My Project</h2>
-            <div class="d-flex flex-wrap align-items-center justify-content-center gap-4 mt-4   ">
-                <div class="images d-flex flex-column position-relative" data-aos="fade-down" data-aos-delay="300">
-                    <img src="assets/images/example.jpg" alt="">
-                    <div class="text m-3 ">
-                        <p>Lorem, ipsum dolor.</p>
-                        <a href="#">Click Here</a>
-                    </div>
-                </div>
-                <div class="images d-flex flex-column position-relative" data-aos="fade-down" data-aos-delay="500">
-                    <img src="assets/images/example.jpg" alt="">
-                    <div class="text m-3">
-                        <p>Lorem, ipsum dolor. Lorem ipsum dolor, sit amet consectetur adipisicing. Lorem ipsum, dolor
-                        </p>
-                        <a href="#">Click Here</a>
-                    </div>
-                </div>
-                <div class="images d-flex flex-column position-relative" data-aos="fade-down" data-aos-delay="700">
-                    <img src="assets/images/example.jpg" alt="">
-                    <div class="text m-3">
-                        <p>Lorem, ipsum dolor. Lorem ipsum dolor sit amet.</p>
-                        <a href="#">Click Here</a>
-                    </div>
-                </div>
-                <div class="images d-flex flex-column position-relative" data-aos="fade-down" data-aos-delay="900">
-                    <img src="assets/images/example.jpg" alt="">
-                    <div class="text m-3">
-                        <p>Lorem, ipsum dolor. Lorem, ipsum.</p>
-                        <a href="#">Click Here</a>
-                    </div>
+                </span><br>
+                <div class="mt-3">
+                    <a href="https://wa.me/6283829055059/">Contact</a>
+                    <a href="">Blog</a>
                 </div>
             </div>
         </div>
-        <div class="d-flex justify-content-center p-5" id="about" data-aos="fade-up">
-            <div class="profil d-flex flex-column justify-content-center align-items-center text-center">
-                <h2 data-aos="fade-down" data-aos-delay="200">Lets Check My Profile</h2>
-                <div class="image-profile" data-aos="fade-down" data-aos-delay="100">
-                    <img src="assets/images/profile.jpg" alt="">
-                </div>
-                <div class="col-lg-6 col-sm-8 text-center">
-                    <span data-aos="fade-down" data-aos-delay="300">Hello introduce my name is Dian, I'm from the city
-                        of Kuningan, West Java,I'm a Fresh
-                        Graduate.
-                        I hope that in the future I can be like all of you friends who want to Study Web Development and
-                        Do Work.</span>
-                </div>
-                <div class="d-flex flex-column col-lg-6 col-sm-9 col-12 skill">
-                    <div class="d-flex justify-content-between mt-3" data-aos="fade-left" data-aos-delay="250">
-                        <span>HTML</span>
-                        <span>90%</span>
+        <!--  -->
+        <div class="project d-flex justify-content-center min-vh-100">
+            <div class="project-item text-center" id="project">
+                <h2>It's My Project Owned</h2>
+                <div class="d-flex flex-wrap justify-content-center gap-4 mt-4">
+                    <div class="project-column position-relative">
+                        <div class="images">
+                            <img src="assets/images/example.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <span>
+                                Lorem ipsum dolor sit amlorem5et.
+                            </span><br>
+                            <div class="check">
+                                <a href="">Check</a>
+                            </div>
+                        </div>
                     </div>
-                    <input type="range" name="" id="" max="100" min="0" value="70" style="  background-size: 90% 100%;"
-                        disabled data-aos="fade-right" data-aos-delay="200">
-                    <div class="d-flex justify-content-between mt-3" data-aos="fade-left" data-aos-delay="500">
-                        <span>CSS</span>
-                        <span>80%</span>
+                    <div class="project-column position-relative">
+                        <div class="images">
+                            <img src="assets/images/example.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <span>
+                                Lorem ipsum Lorem ipsum dolor, sit amet consectetur adipisicing elit. Verit minima?
+                                Repellendus,
+                                tempore. dolor sit amet.
+                            </span><br>
+                            <div class="check">
+                                <a href="">Check</a>
+                            </div>
+                        </div>
                     </div>
-                    <input type="range" name="" id="" max="100" min="0" value="50" style="  background-size: 80% 100%;"
-                        disabled data-aos="fade-right" data-aos-delay="200">
-                    <div class="d-flex justify-content-between mt-3" data-aos="fade-left" data-aos-delay="1000">
-                        <span>JAVASCRIPT</span>
-                        <span>70%</span>
+                    <div class="project-column position-relative">
+                        <div class="images">
+                            <img src="assets/images/example.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <span>
+                                Lorem ipsum dolor sit amet.
+                            </span><br>
+                            <div class="check">
+                                <a href="">Check</a>
+                            </div>
+                        </div>
                     </div>
-                    <input type="range" name="" id="" max="100" min="0" value="50" style="  background-size: 70% 100%;"
-                        disabled data-aos="fade-right" data-aos-delay="200">
-                    <div class="d-flex justify-content-between mt-3" data-aos="fade-left" data-aos-delay="1500">
-                        <span>PHP</span>
-                        <span>50%</span>
+                    <div class="project-column position-relative">
+                        <div class="images">
+                            <img src="assets/images/example.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <span>
+                                Lorem ipsum dolor sit amet.
+                            </span><br>
+                            <div class="check">
+                                <a href="">Check</a>
+                            </div>
+                        </div>
                     </div>
-                    <input type="range" name="" id="" max="100" min="0" value="50" style="  background-size: 50% 100%;"
-                        disabled data-aos="fade-right" data-aos-delay="200">
-                </div>
-                <div class="mt-5 cv">
-                    <a href="#">Download CV</a>
                 </div>
             </div>
         </div>
+        <!--  -->
+        <div class="about d-flex justify-content-center min-vh-100  text-center mt-5" id="about">
+            <div class="about-item">
+                <h2>Let's Check My Profile</h2>
+                <div class="about-profile  d-flex justify-content-center flex-column align-items-center">
+                    <div class="images">
+                        <img src="assets/images/profile.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <span>Hello introduce my name is Dian, I'm from the
+                            city
+                            of Kuningan, West Java,I'm a Fresh
+                            Graduate.<br>
+                            I hope that in the future I can be like all of you friends who want to Study Web Development
+                            and
+                            Do Work.</span>
+                    </div>
+                    <div class="d-flex flex-column w-75">
+                        <div class="d-flex justify-content-between mt-3" data-aos="fade-left" data-aos-delay="250">
+                            <span>HTML</span>
+                            <span>90%</span>
+                        </div>
+                        <input type="range" name="" id="" max="100" min="0" value="70"
+                            style="  background-size: 90% 100%;" disabled data-aos="fade-right" data-aos-delay="200">
+                        <div class="d-flex justify-content-between mt-3" data-aos="fade-left" data-aos-delay="500">
+                            <span>CSS</span>
+                            <span>80%</span>
+                        </div>
+                        <input type="range" name="" id="" max="100" min="0" value="50"
+                            style="  background-size: 80% 100%;" disabled data-aos="fade-right" data-aos-delay="200">
+                        <div class="d-flex justify-content-between mt-3" data-aos="fade-left" data-aos-delay="1000">
+                            <span>JAVASCRIPT</span>
+                            <span>70%</span>
+                        </div>
+                        <input type="range" name="" id="" max="100" min="0" value="50"
+                            style="  background-size: 70% 100%;" disabled data-aos="fade-right" data-aos-delay="200">
+                        <div class="d-flex justify-content-between mt-3" data-aos="fade-left" data-aos-delay="1500">
+                            <span>PHP</span>
+                            <span>50%</span>
+                        </div>
+                        <input type="range" name="" id="" max="100" min="0" value="50"
+                            style="  background-size: 50% 100%;" disabled data-aos="fade-right" data-aos-delay="200">
+                    </div>
+                    <div class="mt-5 cv">
+                        <a href="#">Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
 </body>
 <script src="assets/script/typewriter.js"></script>
