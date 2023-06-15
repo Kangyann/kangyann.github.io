@@ -52,7 +52,8 @@
   letter-spacing: 1px;
 }
 .bars {
-  display: none;
+  /* display: none; */
+  overflow: hidden;
 }
 .items a,
 .cv a {
