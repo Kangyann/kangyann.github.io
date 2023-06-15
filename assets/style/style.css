@@ -29,7 +29,7 @@
   background-color: var(--primary);
   width: 100%;
 }
-.navbar,
+.nav,
 #menu {
   background-color: var(--black-opacity);
 }
