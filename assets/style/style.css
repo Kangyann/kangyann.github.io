@@ -67,6 +67,9 @@
 .menu {
   display: none;
 }
+.offcanvas {
+  width: 200px !important;
+}
 .page-item a {
   padding: 4px 12px;
   margin-top: 12px;
