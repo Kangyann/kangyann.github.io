@@ -28,12 +28,8 @@
 .content {
   background-color: var(--primary);
   width: 100%;
-  overflow: hidden;
 }
-.nav {
-  height: 50px;
-}
-.nav,
+.navbar,
 #menu {
   background-color: var(--black-opacity);
 }
