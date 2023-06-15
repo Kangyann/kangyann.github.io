@@ -166,13 +166,3 @@ html {
   color: var(--primary);
 }
 
-
-@media screen and (max-width: 576px) {
-  .menu {
-    display: block;
-  }
-  .home a,
-  .linked a {
-    display: none;
-  }
-}
