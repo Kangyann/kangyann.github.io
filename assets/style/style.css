@@ -29,9 +29,12 @@
   background-color: var(--primary);
   width: 100%;
 }
-.nav,
+.navbar,
 #menu {
   background-color: var(--black-opacity);
+}
+.offcanvas {
+  width: 200px !important;
 }
 .home,
 .linked,

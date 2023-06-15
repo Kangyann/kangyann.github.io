@@ -20,7 +20,7 @@
 <body>
     <div class="content">
         <!--  -->
-        <div class="nav container-fluid d-flex justify-content-between sticky-top">
+        <div class="navbar sticky-top">
             <div class="home d-flex align-items-baseline">
                 <i class="fa-solid fa-house fa-xl"></i>
                 <a href="#">KANGYANN</a>
@@ -35,21 +35,20 @@
                 <i class="fa-brands fa-instagram fa-xl mx-2"></i>
                 <i class="fa-brands fa-discord fa-xl"></i>
             </div>
-            <div class="menu">
+            <div class="menu mx-3">
                 <i class="fa-solid fa-bars" data-bs-toggle="offcanvas" href="#menu" style="cursor: pointer;"> </i>
                 <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="menu"
                     aria-labelledby="offcanvasScrollingLabel">
                     <div class="offcanvas-header">
-                        <div class="" style="border-bottom: 2px solid var(--primary);">
+                        <div class="d-flex align-items-center" style="border-bottom: 2px solid var(--primary);">
                             <h2>Menu</h2>
+                            <button type="button" class="btn-close mx-2" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
                     </div>
                     <div class="offcanvas-body">
-                        <div class="">
-                            <a href="#home" style="font-size: 14px;">Beranda</a>
-                            <a href="#project" style="font-size: 14px;">Project</a>
+                            <a href="#home" style="font-size: 14px;">Beranda</a><br>
+                            <a href="#project" style="font-size: 14px;">Project</a><br>
                             <a href="#about" style="font-size: 14px;">Aboust Me</a>
-                        </div>
                     </div>
                 </div>
             </div>
