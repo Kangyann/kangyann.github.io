@@ -1,0 +1,12 @@
+[
+    {
+        "image": "assets\/images\/example.jpg",
+        "text": "Example",
+        "link": "index.php"
+    },
+    {
+        "image": "assets\/images\/prima.png",
+        "text": "Simple custom prima number ",
+        "link": "project/setPrima/ "
+    }
+]

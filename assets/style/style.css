@@ -98,12 +98,17 @@
 }
 .project-column .images {
   width: 100%;
+  height: 240px;
   cursor: pointer;
+  opacity: 0.9;
 }
-
+.project-column .images:hover {
+  opacity: .5;
+}
 .project-column .images img {
   width: 100%;
-}
+  height: 100%;
+  object-fit: cover;}
 .project-column .text {
   margin: 12px;
   text-align: left;

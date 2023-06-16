@@ -1,4 +1,7 @@
+<?php
+$data = json_decode(file_get_contents("assets/script/data.json"), true);
 
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,8 +9,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=7">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Project,Portofolio,Single Website">
+    <meta name="keywords" content="Kangyann, Portofolio, Project">
     <link rel="stylesheet" href="assets/style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
@@ -73,59 +76,23 @@
             <div class="project-item text-center" id="project">
                 <h2>It's My Project Owned</h2>
                 <div class="d-flex flex-wrap justify-content-center gap-4 mt-4">
-                    <div class="project-column position-relative">
+                    <?php
+                    for($i = 0 ; $i < count($data); $i++) {
+                        echo '<div class="project-column position-relative">
                         <div class="images">
-                            <img src="assets/images/example.jpg" alt="">
+                            <img src="'.$data[$i]['image'].'" alt="">
                         </div>
                         <div class="text">
                             <span>
-                                Lorem ipsum dolor sit amlorem5et.
+                                '.$data[$i]['text'].'
                             </span><br>
                             <div class="check">
-                                <a href="">Check</a>
+                                <a href="'.$data[$i]['link'].'">Check</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="project-column position-relative">
-                        <div class="images">
-                            <img src="assets/images/example.jpg" alt="">
-                        </div>
-                        <div class="text">
-                            <span>
-                                Lorem ipsum Lorem ipsum dolor, sit amet consectetur adipisicing elit. Verit minima?
-                                Repellendus,
-                                tempore. dolor sit amet.
-                            </span><br>
-                            <div class="check">
-                                <a href="">Check</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-column position-relative">
-                        <div class="images">
-                            <img src="assets/images/example.jpg" alt="">
-                        </div>
-                        <div class="text">
-                            <span>
-                                Lorem ipsum dolor sit amet.
-                            </span><br>
-                            <div class="check">
-                                <a href="">Check</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-column position-relative">
-                        <div class="images">
-                            <img src="assets/images/example.jpg" alt="">
-                        </div>
-                        <div class="text">
-                            <span>
-                                Lorem ipsum dolor sit amet.
-                            </span><br>
-                            <div class="check">
-                                <a href="">Check</a>
-                            </div>
-                        </div>
+                    </div>'; 
+                    }
+                    ?>
                     </div>
                 </div>
             </div>
