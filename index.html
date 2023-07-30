@@ -10,9 +10,9 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <link rel="stylesheet" href="assets/style/style.css">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/Kangyann/kangyann.github.io/main/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://raw.githubusercontent.com/Kangyann/kangyann.github.io/main/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <link rel="shortcut icon" href="https://svgshare.com/i/jmv.svg" type="image/x-icon">
 </head>
 
@@ -30,15 +30,15 @@
                         <i class="fa-solid fa-user fa-xl" style="color: var(--text);"></i>
                         <span class="ms-3" style="font-family: 'Poppins'; color: var(--text);" >About Me</span>
                     </div>
-                    <div class="d-flex align-items-baseline gap-3 p-2 left-icon" style="white-space: nowrap; cursor: pointer;">
+                    <div class="d-flex align-items-baseline gap-3 p-2 left-icon" data-bs-toggle="modal" data-bs-target="#cp" style="white-space: nowrap; cursor: pointer;">
                         <i class="fa-solid fa-phone fa-lg" style="color: var(--text);"></i>
                         <span class="ms-3" style="font-family: 'Poppins'; color: var(--text);">Contact Person</span>
                     </div>
-                    <div class="d-flex align-items-baseline gap-3 p-2 left-icon" style="white-space: nowrap; cursor: pointer;">
+                    <!-- <div class="d-flex align-items-baseline gap-3 p-2 left-icon" data-bs-toggle="modal" data-bs-target="#mail" style="white-space: nowrap; cursor: pointer;">
                         <i class="fa-solid fa-envelope fa-lg" style="color: var(--text);"></i>
                         <span class="ms-3" style="font-family: 'Poppins'; color: var(--text);">Mail</span>
-                    </div>
-                    <div class="d-flex align-items-baseline gap-3 p-2 left-icon" style="white-space: nowrap; cursor: pointer;">
+                    </div> -->
+                    <div class="d-flex align-items-baseline gap-3 p-2 left-icon" data-bs-toggle="modal" data-bs-target="project" style="white-space: nowrap; cursor: pointer;">
                         <i class="fa-solid fa-umbrella fa-lg" style="color: var(--text);"></i>
                         <span class="ms-3" style="font-family: 'Poppins'; color: var(--text);">Projects</span>
                     </div>
@@ -70,11 +70,11 @@
                     <i class="fa-brands fa-instagram fa-xl" style="cursor: pointer; color: var(--primary);"></i>
                     <i class="fa-brands fa-github fa-xl mx-2" style="cursor: pointer; color: var(--primary);"></i>
                     <i class="fa-brands fa-linkedin fa-xl" style="cursor: pointer; color: var(--primary);"></i>
-                </div>
+                </div> 
             </div>
         </div>
     </div>
-    <!-- Modal -->
+<!-- ABOUT ME !! -->
 <div class="modal fade" id="myinfo" tabindex="-1" aria-labelledby="..." aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -113,8 +113,25 @@
         <div class="modal-footer">
             <span>Personal Webpage &#169 2023</span>
             <i class="fa-brands fa-instagram fa-xl" style="cursor: pointer;"></i>
-            <!-- <i class="fa-brands fa-github fa-xl mx-2" style="cursor: pointer; color: var(--primary);"></i>
-            <i class="fa-brands fa-linkedin fa-xl" style="cursor: pointer; color: var(--primary);"></i> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END ABOUT ME !! -->
+  <!--  -->
+  <!-- CONTACT PERSON !! -->
+  <div class="modal fade" id="cp" tabindex="-1" aria-labelledby="..." aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5">Contact Person</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+            <span>Personal Webpage &#169 2023</span>
+            <i class="fa-brands fa-instagram fa-xl" style="cursor: pointer;"></i>
         </div>
       </div>
     </div>
