@@ -3,7 +3,6 @@
 * {
   margin: 0;
   padding: 0;
-
 }
 :root {
   --text: #f1eff6;
@@ -12,15 +11,73 @@
   --secondary: #c4abc0;
   --accent: #6e5aa0;
 }
-.left-section{
+.left-section {
   width: 75px;
 }
 .left-section:hover {
   width: 240px;
 }
 .left-icon:hover {
-  background-color: rgb(255,255,255,.1);
+  background-color: rgb(255, 255, 255, 0.1);
   border-radius: 12px;
+}
+.message a:hover {
+  opacity: 0.7;
+  background-color: var(--background) !important;
+  color: var(--primary) !important;
+}
+.ListPage {
+  transition: 1s all ease-out;
+}
+
+.comingsoon span:nth-child(1) {
+  animation: textColor 2s infinite ease-in .2s;
+}
+.comingsoon span:nth-child(2) {
+   animation: textColor 2s infinite ease-in .6s;
+}
+.comingsoon span:nth-child(3) {
+   animation: textColor 2s infinite ease-in 1s;
+}
+.comingsoon span:nth-child(4) {
+   animation: textColor 2s infinite ease-in 1.4s;
+}
+.comingsoon span:nth-child(5) {
+   animation: textColor 2s infinite ease-in 1.8s;
+}
+.comingsoon span:nth-child(6) {
+   animation: textColor 2s infinite ease-in 2.2s;
+}
+.comingsoon span:nth-child(7) {
+   animation: textColor 2s infinite ease-in 2.6s;
+}
+.comingsoon span:nth-child(8) {
+   animation: textColor 2s infinite ease-in 3s;
+}
+.comingsoon span:nth-child(9) {
+   animation: textColor 2s infinite ease-in 3.4s;
+}
+.comingsoon span:nth-child(10) {
+   animation: textColor 2s infinite ease-in 3.6s;
+}
+
+@keyframes textColor {
+  0%,
+  100% {
+    color: inherit;
+  }
+  20% {
+    color: var(--primary);
+  }
+  40% {
+    color: blueviolet;
+  }
+  60% {
+    color: var(--secondary);
+  }
+  80% {
+    color: darkblue;
+  }
 }
 @media screen and (max-width: 576px) {
   .container-main {
@@ -30,9 +87,11 @@
   }
   .left-section {
     max-height: 10vh !important;
-    width: 100%;
+    width: 100% !important;
     top: 0;
-    background-color: rebeccapurple !important;
   }
-
+  .mode {
+    top: 30px;
+    right: 12px !important;
+  }
 }

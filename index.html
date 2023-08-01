@@ -1,141 +1,380 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kangyann | Personal Page</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <link rel="stylesheet" href="assets/style/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="assets/style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
-    <link rel="shortcut icon" href="https://svgshare.com/i/jmv.svg" type="image/x-icon">
-</head>
+    <link
+      rel="shortcut icon"
+      href="https://svgshare.com/i/jmv.svg"
+      type="image/x-icon"
+    />
+  </head>
 
-<body>
+  <body>
+    <div
+      class="d-flex bg-secondary-subtle justify-content-center align-items-center min-vh-100 position-relative"
+    >
+      <!-- NEED TO REVISION -->
 
-    <div class="d-flex justify-content-center align-items-center min-vh-100 position-relative">
-        <!-- NEED TO REVISION -->
+      <div
+        class="h-100 position-fixed left-section overflow-hidden z-1"
+        style="
+          left: 0;
+          transition: 0.6s all ease-in-out;
+          box-shadow: 1px 1px 14px rgb(0, 0, 0, 0.5);
+          background-color: var(--accent);
+        "
+      >
+        <div class="m-lg-3 m-md-3 m-sm-3 m-2">
+          <img src="https://svgshare.com/i/jmv.svg" alt="" width="48" />
+          <div class="d-flex flex-column gap-4 mt-5 m-2">
+            <div
+              class="d-none d-lg-flex d-sm-flex d-md-flex align-items-baseline gap-3 p-2 left-icon"
+              style="white-space: nowrap; cursor: pointer"
+              id="ChangePage"
+              data-page="home"
+            >
+              <i class="fa-solid fa-home fa-xl" style="color: var(--text)"></i>
+              <span
+                class="ms-3"
+                style="font-family: 'Poppins'; color: var(--text)"
+                >Home</span
+              >
+            </div>
+            <div
+              class="d-none d-lg-flex d-sm-flex d-md-flex align-items-baseline gap-3 p-2 left-icon"
+              style="white-space: nowrap; cursor: pointer"
+              id="ChangePage"
+              data-page="about"
+            >
+              <i class="fa-solid fa-user fa-xl" style="color: var(--text)"></i>
+              <span
+                class="ms-3"
+                style="font-family: 'Poppins'; color: var(--text)"
+                >About Me</span
+              >
+            </div>
 
-        <div class="h-100 position-fixed left-section overflow-hidden"
-            style="left: 0; transition: .6s all ease-in-out; box-shadow: 1px 1px 14px rgb(0,0,0,.5);background-color: var(--accent); ">
-            <div class="m-lg-3 m-md-3 m-sm-3 m-2">
-                <img src="https://svgshare.com/i/jmv.svg" alt="" width="48">
-                <div class="d-flex flex-column  gap-4 mt-5 m-2">
-                    <div class="d-flex align-items-baseline gap-3 p-2 left-icon" data-bs-toggle="modal" data-bs-target="#myinfo" style="white-space: nowrap; cursor: pointer;">
-                        <i class="fa-solid fa-user fa-xl" style="color: var(--text);"></i>
-                        <span class="ms-3" style="font-family: 'Poppins'; color: var(--text);" >About Me</span>
-                    </div>
-                    <div class="d-flex align-items-baseline gap-3 p-2 left-icon" data-bs-toggle="modal" data-bs-target="#cp" style="white-space: nowrap; cursor: pointer;">
-                        <i class="fa-solid fa-phone fa-lg" style="color: var(--text);"></i>
-                        <span class="ms-3" style="font-family: 'Poppins'; color: var(--text);">Contact Person</span>
-                    </div>
-                    <!-- <div class="d-flex align-items-baseline gap-3 p-2 left-icon" data-bs-toggle="modal" data-bs-target="#mail" style="white-space: nowrap; cursor: pointer;">
-                        <i class="fa-solid fa-envelope fa-lg" style="color: var(--text);"></i>
-                        <span class="ms-3" style="font-family: 'Poppins'; color: var(--text);">Mail</span>
-                    </div> -->
-                    <div class="d-flex align-items-baseline gap-3 p-2 left-icon" data-bs-toggle="modal" data-bs-target="project" style="white-space: nowrap; cursor: pointer;">
-                        <i class="fa-solid fa-umbrella fa-lg" style="color: var(--text);"></i>
-                        <span class="ms-3" style="font-family: 'Poppins'; color: var(--text);">Projects</span>
-                    </div>
-                    <div class="position-absolute bottom-0 mb-3 mode">
-                        <i class="fa-solid fa-moon fa-lg" style="color: var(--text); cursor: pointer;"></i>
-                    </div>
-                </div>
+            <div
+              class="d-none d-lg-flex d-sm-flex d-md-flex align-items-baseline gap-3 p-2 left-icon"
+              style="white-space: nowrap; cursor: pointer"
+              id="ChangePage"
+              data-page="project"
+            >
+              <i
+                class="fa-solid fa-umbrella fa-lg"
+                style="color: var(--text)"
+              ></i>
+              <span
+                class="ms-3"
+                style="font-family: 'Poppins'; color: var(--text)"
+                >Projects</span
+              >
             </div>
-        </div>
-        <!--  -->
-        <div class="d-flex justify-content-center gap-3 container container-main">
-            <div class="">
-                <img src="assets/images/profile.jpg" alt="" width="200" class="rounded-circle"
-                    style="box-shadow: 2px 1px 12px 4px var(--black-opacity);">
+            <div class="position-absolute mb-3 mode" style="bottom: 10px">
+              <i
+                class="fa-solid fa-moon fa-lg mode_icon"
+                onclick="darkMode()"
+                style="color: var(--text); cursor: pointer; display: block"
+              ></i>
+              <i
+                class="fa-solid fa-sun fa-lg mode_icon"
+                onclick="lightMode()"
+                style="color: var(--text); cursor: pointer; display: none"
+              ></i>
+              <i
+                class="fa-solid fa-bars fa-xl d-lg-none d-sm-none d-md-none d-block mx-4 me-1 px-2"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasTop"
+                aria-controls="offcanvasTop"
+                style="cursor: pointer"
+              ></i>
+
+              <div
+                class="offcanvas offcanvas-top d-lg-none d-md-none d-sm-none"
+                style="background-color: var(--accent)"
+                id="offcanvasTop"
+                aria-labelledby="offcanvasTopLabel"
+              >
+                <div class="offcanvas-header">
+                  <h5
+                    class="offcanvas-title"
+                    id="offcanvasTopLabel"
+                    style="color: var(--text)"
+                  >
+                    Menu
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div
+                    class="d-flex align-items-baseline gap-3 p-2 left-icon"
+                    style="white-space: nowrap; cursor: pointer" id="ChangePage" data-page="home"
+                  >
+                    <i
+                      class="fa-solid fa-home fa-xl"
+                      style="color: var(--text)"
+                    ></i>
+                    <span
+                      class="ms-3"
+                      style="font-family: 'Poppins'; color: var(--text)"
+                      >Home</span
+                    >
+                  </div>
+                  <div
+                    class="d-flex align-items-baseline gap-3 p-2 left-icon"
+                    style="white-space: nowrap; cursor: pointer" id="ChangePage" data-page="about"
+                  >
+                    <i
+                      class="fa-solid fa-user fa-xl"
+                      style="color: var(--text)"
+                    ></i>
+                    <span
+                      class="ms-3"
+                      style="font-family: 'Poppins'; color: var(--text)"
+                      >About Me</span
+                    >
+                  </div>
+  
+                  <div
+                    class="d-flex align-items-baseline gap-3 p-2 left-icon"
+                    style="white-space: nowrap; cursor: pointer" id="ChangePage" data-page="project"
+                  >
+                    <i
+                      class="fa-solid fa-umbrella fa-lg"
+                      style="color: var(--text)"
+                    ></i>
+                    <span
+                      class="ms-3"
+                      style="font-family: 'Poppins'; color: var(--text)"
+                      >Projects</span
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-xl-4 col-lg-5 col-sm-6">
-                <span style="font-family: 'Titillium Web' ; font-weight: bold;">HI THERE ! I'M</span>
-                <h2 style="font-family: 'Poppins'; color: var(--primary); letter-spacing: 2px;" class="my-2">KANGYANN
-                </h2>
-                <span style="font-family: 'Poppins',sans-serif;">A <a href="#"
-                        style="color: var(--primary); font-weight: bold;" class="text-decoration-none">Front End
-                        Developer</a> about designing a web-based
-                    program with the experience I have in web
-                    developers</span>
-                <div class="mt-3">
-                    <a href="" class="text-decoration-none py-1 px-4 rounded-3 text-white me-4"
-                        style="font-family: 'Poppins'; 
-                    font-size: 14px; font-weight: 200; letter-spacing: 1px; background-color: var(--primary);">Resume</a>
-                    <i class="fa-brands fa-instagram fa-xl" style="cursor: pointer; color: var(--primary);"></i>
-                    <i class="fa-brands fa-github fa-xl mx-2" style="cursor: pointer; color: var(--primary);"></i>
-                    <i class="fa-brands fa-linkedin fa-xl" style="cursor: pointer; color: var(--primary);"></i>
-                </div> 
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="ListPage" id="home">
+        <div
+          class="d-flex justify-content-center gap-3 container container-main"
+        >
+          <div class="">
+            <img
+              src="assets/images/profile.jpg"
+              alt=""
+              width="200"
+              class="rounded-circle"
+              style="box-shadow: 2px 1px 12px 4px var(--black-opacity)"
+            />
+          </div>
+          <div class="col-xl-4 col-lg-5 col-sm-6">
+            <span style="font-family: 'Titillium Web'; font-weight: bold"
+              >HI THERE ! I'M</span
+            >
+            <h2
+              style="
+                font-family: 'Poppins';
+                color: var(--primary);
+                letter-spacing: 2px;
+              "
+              class="my-2"
+            >
+              KANGYANN
+            </h2>
+            <span style="font-family: 'Poppins', sans-serif"
+              >A
+              <a
+                href="#"
+                style="color: var(--primary); font-weight: bold"
+                class="text-decoration-none"
+                >Front End Developer</a
+              >
+              about designing a web-based program with the experience I have in
+              web developers</span
+            >
+            <div class="mt-3">
+              <a
+                href=""
+                class="text-decoration-none py-1 px-4 rounded-3 text-white me-4"
+                style="
+                  font-family: 'Poppins';
+                  font-size: 14px;
+                  font-weight: 200;
+                  letter-spacing: 1px;
+                  background-color: var(--primary);
+                "
+                >Resume</a
+              >
+              <i
+                class="fa-brands fa-instagram fa-xl"
+                style="cursor: pointer; color: var(--primary)"
+              ></i>
+              <i
+                class="fa-brands fa-github fa-xl mx-2"
+                style="cursor: pointer; color: var(--primary)"
+              ></i>
+              <i
+                class="fa-brands fa-linkedin fa-xl"
+                style="cursor: pointer; color: var(--primary)"
+              ></i>
             </div>
+          </div>
         </div>
-    </div>
-<!-- ABOUT ME !! -->
-<div class="modal fade" id="myinfo" tabindex="-1" aria-labelledby="..." aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5">About Me</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            <div class="d-flex align-items-center flex-column gap-3">
-                <div class="d-flex justify-content-between w-75">
-                    <span>Real Name :</span>
-                    <span>Undiana Fadilah</span>
+      </div>
+      <div class="ListPage" id="about" style="display: none">
+        <div
+          class="d-flex justify-content-center min-vh-100 align-items-center"
+        >
+          <div class="container position-relative">
+            <div class="d-flex justify-content-center gap-5 mt-5">
+              <div class="row">
+                <div class="text-center col-lg-6 col-md-6">
+                  <img
+                    src="assets/images/profile.jpg"
+                    alt=""
+                    width="180"
+                    class="rounded-4 mb-2 mt-5"
+                  />
+                  <h2
+                    style="
+                      color: var(--primary);
+                      font-family: 'Titillium Web';
+                      font-weight: 600;
+                      letter-spacing: 1px;
+                    "
+                  >
+                    Kangyann
+                  </h2>
+                  <p style="font-family: 'Poppins'; letter-spacing: 1px">
+                    Web Developer & Data Analytics
+                  </p>
                 </div>
-                <div class="d-flex justify-content-between w-75">
-                    <span>Age : </span>
-                    <span>18 Years</span>
+                <div class="head col-lg-5 col-md-6 col-12">
+                  <h2
+                    style="
+                      color: var(--primary);
+                      font-family: 'Titillium Web';
+                      font-weight: bold;
+                      letter-spacing: 1px;
+                    "
+                  >
+                    About Me
+                  </h2>
+                  <span style="font-family: 'Poppins'"
+                    >Hallo I'm Undiana Fadilah (Kangyann),Fresh Graduate from
+                    SMKN 3 KUNINGAN, Born on Kuningan City At 19 November , 2004
+                    . Now I'm 18 Years Old, I just want to be a programmer
+                    because this my
+                    <span style="color: var(--primary); font-weight: bold"
+                      >Hobby</span
+                    >
+                    and my
+                    <span style="color: var(--primary); font-weight: bold"
+                      >Future</span
+                    >.</span
+                  >
+                  <hr />
+                  <table>
+                    <tr style="font-family: 'Poppins'">
+                      <td style="width: 100px">NAME</td>
+                      <td style="color: var(--background)">
+                        : Undiana Fadilah
+                      </td>
+                    </tr>
+                    <tr style="font-family: 'Poppins'">
+                      <td style="width: 100px">PHONE</td>
+                      <td style="color: var(--background)">
+                        : +(62) 83 829 055 059
+                      </td>
+                    </tr>
+                    <tr style="font-family: 'Poppins'">
+                      <td style="width: 100px">ADDRESS</td>
+                      <td style="color: var(--background)">
+                        : Kuningan, West Java
+                      </td>
+                    </tr>
+                    <tr style="font-family: 'Poppins'">
+                      <td style="width: 100px">WEBSITE</td>
+                      <td>
+                        :
+                        <a
+                          href="https://kangyann.my.id/"
+                          class="text-decoration-none"
+                          style="color: var(--background)"
+                          >https://kangyann.my.id/</a
+                        >
+                      </td>
+                    </tr>
+                    <tr style="font-family: 'Poppins'">
+                      <td style="width: 100px">E-MAIL</td>
+                      <td style="color: var(--background)">
+                        : Kangyann727@gmail.com
+                      </td>
+                    </tr>
+                  </table>
+                  <div class="my-3 message">
+                    <a
+                      href=""
+                      class="py-2 px-4 rounded-3 text-decoration-none"
+                      style="
+                        background-color: var(--accent);
+                        color: var(--text);
+                        transition: 0.3s all ease-in-out;
+                      "
+                      >Message Now !</a
+                    >
+                  </div>
                 </div>
-                <div class="d-flex justify-content-between w-75">
-                    <span>From City :</span>
-                    <span class="float-start">Kuningan, West Java</span>
-                </div>
-                <div class="d-flex justify-content-between w-75">
-                    <span>Last School : </span>
-                    <span class="float-start">SMKN 3 Kuningan</span>
-                </div>
-                <div class="d-flex justify-content-between w-75">
-                    <span>Skills :</span>
-                    <span class="float-start">HTML, CSS, JAVASCRIPT, PHP</span>
-                </div>
-                <div class="w-75">
-                    <span>Motivation : </span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, voluptatibus?</p>
-                </div>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="modal-footer">
-            <span>Personal Webpage &#169 2023</span>
-            <i class="fa-brands fa-instagram fa-xl" style="cursor: pointer;"></i>
+      </div>
+      <div class="ListPage" id="project" style="display: none">
+        <div
+          class="d-flex align-items-center justify-content-center min-vh-100"
+        >
+          <div class="comingsoon">
+            <h2 style="font-family: 'Titillium Web'; font-weight: 600;">
+            <span>C</span>
+            <span>O</span>
+            <span>M</span>
+            <span>I</span>
+            <span>N</span>
+            <span>G</span>
+            <span>S</span>
+            <span>O</span>
+            <span>O</span>
+            <span>N</span>
+        </h2>
+            <span style="font-family: 'Poppins';">by Kangyann's --> @kangyann.tsx</span>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- END ABOUT ME !! -->
-  <!--  -->
-  <!-- CONTACT PERSON !! -->
-  <div class="modal fade" id="cp" tabindex="-1" aria-labelledby="..." aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5">Contact Person</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-        </div>
-        <div class="modal-footer">
-            <span>Personal Webpage &#169 2023</span>
-            <i class="fa-brands fa-instagram fa-xl" style="cursor: pointer;"></i>
-        </div>
-      </div>
-    </div>
-  </div>
-</body>
-
+  </body>
+  <script src="assets/script/index.js"></script>
 </html>
