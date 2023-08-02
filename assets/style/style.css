@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+@import url("animation.css");
 * {
   margin: 0;
   padding: 0;
@@ -8,18 +9,27 @@
   --text: #f1eff6;
   --background: #120f1a;
   --primary: #695699;
-  --secondary: #c4abc0;
+  --secondary: #9eb3ea;
   --accent: #6e5aa0;
 }
+/* MAIN CSS */
 .left-section {
   width: 75px;
 }
+.active {
+  background-color: rgb(255, 255, 255, 0.1);
+  border-radius: 12px;
+  min-width: 41px;
+  transition: .3s all ease-in-out;
+}
+/* HOVER CSS CREATE */
 .left-section:hover {
   width: 240px;
 }
 .left-icon:hover {
   background-color: rgb(255, 255, 255, 0.1);
   border-radius: 12px;
+  transition: .3s all ease-out;
 }
 .message a:hover {
   opacity: 0.7;
@@ -27,71 +37,8 @@
   color: var(--primary) !important;
 }
 .ListPage {
-  transition: 1s all ease-out;
+  animation: popUp 1s ease-in;
 }
-
-.comingsoon span:nth-child(1) {
-  animation: textColor 2s infinite ease-in .2s;
-}
-.comingsoon span:nth-child(2) {
-   animation: textColor 2s infinite ease-in .6s;
-}
-.comingsoon span:nth-child(3) {
-   animation: textColor 2s infinite ease-in 1s;
-}
-.comingsoon span:nth-child(4) {
-   animation: textColor 2s infinite ease-in 1.4s;
-}
-.comingsoon span:nth-child(5) {
-   animation: textColor 2s infinite ease-in 1.8s;
-}
-.comingsoon span:nth-child(6) {
-   animation: textColor 2s infinite ease-in 2.2s;
-}
-.comingsoon span:nth-child(7) {
-   animation: textColor 2s infinite ease-in 2.6s;
-}
-.comingsoon span:nth-child(8) {
-   animation: textColor 2s infinite ease-in 3s;
-}
-.comingsoon span:nth-child(9) {
-   animation: textColor 2s infinite ease-in 3.4s;
-}
-.comingsoon span:nth-child(10) {
-   animation: textColor 2s infinite ease-in 3.6s;
-}
-
-@keyframes textColor {
-  0%,
-  100% {
-    color: inherit;
-  }
-  20% {
-    color: var(--primary);
-  }
-  40% {
-    color: blueviolet;
-  }
-  60% {
-    color: var(--secondary);
-  }
-  80% {
-    color: darkblue;
-  }
-}
-@media screen and (max-width: 576px) {
-  .container-main {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .left-section {
-    max-height: 10vh !important;
-    width: 100% !important;
-    top: 0;
-  }
-  .mode {
-    top: 30px;
-    right: 12px !important;
-  }
+.mode_active {
+  position: relative;
 }

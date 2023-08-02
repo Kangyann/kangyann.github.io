@@ -9,6 +9,8 @@
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <link rel="stylesheet" href="assets/style/style.css" />
+    <link rel="stylesheet" href="assets/style/maintenance.css" />
+    <link rel="stylesheet" href="assets/style/@screen.css">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
@@ -27,10 +29,9 @@
 
   <body>
     <div
-      class="d-flex bg-secondary-subtle justify-content-center align-items-center min-vh-100 position-relative"
+      class="d-flex bg-secondary-subtle justify-content-center align-items-center min-vh-100 position-relative main-content"
+      style="transition: 0.3s all ease-in"
     >
-      <!-- NEED TO REVISION -->
-
       <div
         class="h-100 position-fixed left-section overflow-hidden z-1"
         style="
@@ -44,7 +45,7 @@
           <img src="https://svgshare.com/i/jmv.svg" alt="" width="48" />
           <div class="d-flex flex-column gap-4 mt-5 m-2">
             <div
-              class="d-none d-lg-flex d-sm-flex d-md-flex align-items-baseline gap-3 p-2 left-icon"
+              class="d-none d-lg-flex d-sm-flex d-md-flex align-items-center gap-3 p-2 left-icon active"
               style="white-space: nowrap; cursor: pointer"
               id="ChangePage"
               data-page="home"
@@ -57,7 +58,7 @@
               >
             </div>
             <div
-              class="d-none d-lg-flex d-sm-flex d-md-flex align-items-baseline gap-3 p-2 left-icon"
+              class="d-none d-lg-flex d-sm-flex d-md-flex align-items-center gap-3 p-2 left-icon"
               style="white-space: nowrap; cursor: pointer"
               id="ChangePage"
               data-page="about"
@@ -71,7 +72,7 @@
             </div>
 
             <div
-              class="d-none d-lg-flex d-sm-flex d-md-flex align-items-baseline gap-3 p-2 left-icon"
+              class="d-none d-lg-flex d-sm-flex d-md-flex align-items-center gap-3 p-2 left-icon"
               style="white-space: nowrap; cursor: pointer"
               id="ChangePage"
               data-page="project"
@@ -88,13 +89,15 @@
             </div>
             <div class="position-absolute mb-3 mode" style="bottom: 10px">
               <i
-                class="fa-solid fa-moon fa-lg mode_icon"
-                onclick="darkMode()"
+                class="fa-solid fa-moon fa-lg mode_icon "
+                data-page="dark"
+                id="dark"
                 style="color: var(--text); cursor: pointer; display: block"
               ></i>
               <i
-                class="fa-solid fa-sun fa-lg mode_icon"
-                onclick="lightMode()"
+                class="fa-solid fa-sun fa-lg mode_icon text-dark"
+                data-page="light"
+                id="light"
                 style="color: var(--text); cursor: pointer; display: none"
               ></i>
               <i
@@ -129,7 +132,9 @@
                 <div class="offcanvas-body">
                   <div
                     class="d-flex align-items-baseline gap-3 p-2 left-icon"
-                    style="white-space: nowrap; cursor: pointer" id="ChangePage" data-page="home"
+                    style="white-space: nowrap; cursor: pointer"
+                    id="ChangePage"
+                    data-page="home"
                   >
                     <i
                       class="fa-solid fa-home fa-xl"
@@ -143,7 +148,9 @@
                   </div>
                   <div
                     class="d-flex align-items-baseline gap-3 p-2 left-icon"
-                    style="white-space: nowrap; cursor: pointer" id="ChangePage" data-page="about"
+                    style="white-space: nowrap; cursor: pointer"
+                    id="ChangePage"
+                    data-page="about"
                   >
                     <i
                       class="fa-solid fa-user fa-xl"
@@ -155,10 +162,12 @@
                       >About Me</span
                     >
                   </div>
-  
+
                   <div
                     class="d-flex align-items-baseline gap-3 p-2 left-icon"
-                    style="white-space: nowrap; cursor: pointer" id="ChangePage" data-page="project"
+                    style="white-space: nowrap; cursor: pointer"
+                    id="ChangePage"
+                    data-page="project"
                   >
                     <i
                       class="fa-solid fa-umbrella fa-lg"
@@ -191,7 +200,9 @@
             />
           </div>
           <div class="col-xl-4 col-lg-5 col-sm-6">
-            <span style="font-family: 'Titillium Web'; font-weight: bold"
+            <span
+              class="text-black"
+              style="font-family: 'Titillium Web'; font-weight: bold"
               >HI THERE ! I'M</span
             >
             <h2
@@ -204,7 +215,7 @@
             >
               KANGYANN
             </h2>
-            <span style="font-family: 'Poppins', sans-serif"
+            <span class="text-black" style="font-family: 'Poppins', sans-serif"
               >A
               <a
                 href="#"
@@ -268,7 +279,10 @@
                   >
                     Kangyann
                   </h2>
-                  <p style="font-family: 'Poppins'; letter-spacing: 1px">
+                  <p
+                    class="text-black"
+                    style="font-family: 'Poppins'; letter-spacing: 1px"
+                  >
                     Web Developer & Data Analytics
                   </p>
                 </div>
@@ -283,7 +297,7 @@
                   >
                     About Me
                   </h2>
-                  <span style="font-family: 'Poppins'"
+                  <span class="text-black" style="font-family: 'Poppins'"
                     >Hallo I'm Undiana Fadilah (Kangyann),Fresh Graduate from
                     SMKN 3 KUNINGAN, Born on Kuningan City At 19 November , 2004
                     . Now I'm 18 Years Old, I just want to be a programmer
@@ -297,24 +311,18 @@
                     >.</span
                   >
                   <hr />
-                  <table>
+                  <table class="text-black">
                     <tr style="font-family: 'Poppins'">
                       <td style="width: 100px">NAME</td>
-                      <td style="color: var(--background)">
-                        : Undiana Fadilah
-                      </td>
+                      <td>: Undiana Fadilah</td>
                     </tr>
                     <tr style="font-family: 'Poppins'">
                       <td style="width: 100px">PHONE</td>
-                      <td style="color: var(--background)">
-                        : +(62) 83 829 055 059
-                      </td>
+                      <td>: +(62) 83 829 055 059</td>
                     </tr>
                     <tr style="font-family: 'Poppins'">
                       <td style="width: 100px">ADDRESS</td>
-                      <td style="color: var(--background)">
-                        : Kuningan, West Java
-                      </td>
+                      <td>: Kuningan, West Java</td>
                     </tr>
                     <tr style="font-family: 'Poppins'">
                       <td style="width: 100px">WEBSITE</td>
@@ -322,26 +330,22 @@
                         :
                         <a
                           href="https://kangyann.my.id/"
-                          class="text-decoration-none"
-                          style="color: var(--background)"
+                          class="text-decoration-none text-black"
                           >https://kangyann.my.id/</a
                         >
                       </td>
                     </tr>
                     <tr style="font-family: 'Poppins'">
                       <td style="width: 100px">E-MAIL</td>
-                      <td style="color: var(--background)">
-                        : Kangyann727@gmail.com
-                      </td>
+                      <td>: Kangyann727@gmail.com</td>
                     </tr>
                   </table>
                   <div class="my-3 message">
                     <a
                       href=""
-                      class="py-2 px-4 rounded-3 text-decoration-none"
+                      class="py-2 px-4 rounded-3 text-decoration-none text-white"
                       style="
                         background-color: var(--accent);
-                        color: var(--text);
                         transition: 0.3s all ease-in-out;
                       "
                       >Message Now !</a
@@ -358,23 +362,26 @@
           class="d-flex align-items-center justify-content-center min-vh-100"
         >
           <div class="comingsoon">
-            <h2 style="font-family: 'Titillium Web'; font-weight: 600;">
-            <span>C</span>
-            <span>O</span>
-            <span>M</span>
-            <span>I</span>
-            <span>N</span>
-            <span>G</span>
-            <span>S</span>
-            <span>O</span>
-            <span>O</span>
-            <span>N</span>
-        </h2>
-            <span style="font-family: 'Poppins';">by Kangyann's --> @kangyann.tsx</span>
+            <h2 style="font-family: 'Titillium Web'; font-weight: 600">
+              <span>C</span>
+              <span>O</span>
+              <span>M</span>
+              <span>I</span>
+              <span>N</span>
+              <span>G</span>
+              <span>S</span>
+              <span>O</span>
+              <span>O</span>
+              <span>N</span>
+            </h2>
+            <span style="font-family: 'Poppins'"
+              >by Kangyann's --> @kangyann.tsx</span
+            >
           </div>
         </div>
       </div>
     </div>
   </body>
+  <script src="assets/script/mode.js"></script>
   <script src="assets/script/index.js"></script>
 </html>
