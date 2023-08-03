@@ -1,31 +1,29 @@
-let backgroundColor = document.querySelector(".main-content"),
-  $ = true,
-  textBlack = document.querySelectorAll(".text-black"),
-  textWhite = document.querySelectorAll(".text-white");
+let bg = document.querySelectorAll(".light"),
+  txt = document.querySelectorAll(".text-black"),
+  $ = true;
+
 const changeMode = () => {
   if ($) {
     $ = false;
     console.log($);
-    backgroundColor.classList.remove("bg-secondary-subtle");
-    backgroundColor.classList.add("bg-dark");
-    textBlack.forEach((e) => {
-      e.setAttribute("class", "text-white-50");
+    bg.forEach((e) => {
+      e.classList.add("dark");
+      e.classList.remove("light");
     });
-    textWhite.forEach((e) => {
-      e.classList.remove("text-white");
-      e.classList.add("text-black");
+    txt.forEach((e) => {
+      e.classList.add("text-white-50");
+      e.classList.remove("text-dark");
     });
   } else {
     $ = true;
     console.log($);
-    backgroundColor.classList.remove("bg-dark");
-    backgroundColor.classList.add("bg-secondary-subtle");
-    textBlack.forEach((e) => {
-      e.setAttribute("class", "text-black");
+    bg.forEach((e) => {
+      e.classList.remove("dark");
+      e.classList.add("light");
     });
-    textWhite.forEach((e) => {
-        e.classList.remove("text-black");
-        e.classList.add("text-white");
-      });
+    txt.forEach((e) => {
+      e.classList.remove("text-white-50");
+      e.classList.add("text-dark");
+    });
   }
 };

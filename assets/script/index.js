@@ -13,7 +13,7 @@ mode.forEach((e) => {
 
 const page = document.querySelectorAll("#ChangePage"),
   listPage = document.querySelectorAll(".ListPage");
-
+  
 page.forEach((e) => {
   e.addEventListener("click", () => {
     page.forEach((e) => {

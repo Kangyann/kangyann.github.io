@@ -6,39 +6,50 @@
   padding: 0;
 }
 :root {
-  --text: #f1eff6;
-  --background: #120f1a;
-  --primary: #695699;
-  --secondary: #9eb3ea;
-  --accent: #6e5aa0;
+  --text-light: #0f0c17;
+  --background-light: #e4e1ef;
+  --primary-light: #945fab;
+  --secondary-light: #e3e8d5;
+  --accent-light: #689e53;
+
+  --text-dark: #e4e1ef;
+  --background-dark: #0f0c17;
+  --primary-dark: #945fab;
+  --secondary-dark: #15180d;
+  --accent-dark: #bdd7b3;
 }
 /* MAIN CSS */
 .left-section {
   width: 75px;
 }
 .active {
-  background-color: rgb(255, 255, 255, 0.1);
   border-radius: 12px;
+  box-shadow: 1px 1px 5px var(--background-dark);
   min-width: 41px;
-  transition: .3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
 }
+
 /* HOVER CSS CREATE */
 .left-section:hover {
   width: 240px;
 }
-.left-icon:hover {
-  background-color: rgb(255, 255, 255, 0.1);
+.left-icon:hover,
+.message a:hover,
+.resume:hover {
+  background-color: var(--background-dark) !important;
   border-radius: 12px;
-  transition: .3s all ease-out;
+  transition: 0.3s all ease-out;
 }
-.message a:hover {
-  opacity: 0.7;
-  background-color: var(--background) !important;
-  color: var(--primary) !important;
-}
+
 .ListPage {
   animation: popUp 1s ease-in;
 }
-.mode_active {
-  position: relative;
+
+.light {
+  background-color: var(--background-light);
+  box-shadow: 1px 1px 14px var(--text-light);
+}
+.dark {
+  background-color: var(--background-dark);
+  box-shadow: 1px 1px 14px var(--text-dark);
 }
