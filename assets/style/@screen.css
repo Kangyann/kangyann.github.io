@@ -20,4 +20,7 @@
   #menu {
     box-shadow: 1px 1px 5px var(--background-dark);
   }
+  #pagesImage {
+    max-width: 100%;
+  }
 }

@@ -28,7 +28,27 @@
   min-width: 41px;
   transition: 0.3s all ease-in-out;
 }
-
+.ListPage {
+  animation: popUp 1s ease-in;
+}
+.light {
+  background-color: var(--background-light);
+  box-shadow: 1px 1px 14px var(--text-light);
+}
+.dark {
+  background-color: var(--background-dark);
+  box-shadow: 1px 1px 14px var(--text-dark);
+}
+.imagesActive {
+  animation: popUp 2s ease-in;
+}
+#pagesImage {
+  max-width: 60%;
+}
+#pagesImage img {
+  max-width: 100%;
+  height: auto;
+}
 /* HOVER CSS CREATE */
 .left-section:hover {
   width: 240px;
@@ -40,16 +60,7 @@
   border-radius: 12px;
   transition: 0.3s all ease-out;
 }
-
-.ListPage {
-  animation: popUp 1s ease-in;
-}
-
-.light {
-  background-color: var(--background-light);
-  box-shadow: 1px 1px 14px var(--text-light);
-}
-.dark {
-  background-color: var(--background-dark);
-  box-shadow: 1px 1px 14px var(--text-dark);
+#Next:hover, #Previous:hover {
+  opacity: .7;
+  transition: .3s all ease-out;
 }

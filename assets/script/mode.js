@@ -1,5 +1,5 @@
 let bg = document.querySelectorAll(".light"),
-  txt = document.querySelectorAll(".text-black"),
+  txt = document.querySelectorAll(".text-dark"),
   $ = true;
 
 const changeMode = () => {
